@@ -37,15 +37,4 @@ public class RewardValue {
     private double convertToCash(double milesValue) {
         return milesValue * 0.0035;
     }
-
-    public static void main(String[] args) {
-        // Example usage
-        RewardValue reward1 = new RewardValue(50.0); // Creating with cash value
-        System.out.println("Cash Value: " + reward1.getCashValue());
-        System.out.println("Miles Value: " + reward1.getMilesValue());
-
-        RewardValue reward2 = new RewardValue(100.0, true); // Creating with miles value
-        System.out.println("Cash Value: " + reward2.getCashValue());
-        System.out.println("Miles Value: " + reward2.getMilesValue());
-    }
 }
